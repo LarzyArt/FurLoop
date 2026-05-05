@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp">
+
+    <TextView
+        android:id="@+id/tv_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Explore"
+        android:textSize="22sp"
+        android:textStyle="bold" />
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/search_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tv_title"
+        android:layout_marginTop="8dp"
+        android:hint="Search pets, tags, people..."
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+        <com.google.android.material.textfield.TextInputEditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/search_layout"
+        android:layout_marginTop="12dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <!-- Row 1 -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginBottom="4dp">
+                <TextView
+                    android:layout_width="0dp" android:layout_height="120dp"
+                    android:layout_weight="1" android:text="🐕"
+                    android:textSize="44sp" android:gravity="center"
+                    android:background="#FFF0E8" android:layout_marginEnd="2dp" />
+                <TextView
+                    android:layout_width="0dp" android:layout_height="120dp"
+                    android:layout_weight="1" android:text="🐈"
+                    android:textSize="44sp" android:gravity="center"
+                    android:background="#E8F5E9" />
+            </LinearLayout>
+
+            <!-- Row 2 -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginBottom="4dp">
+                <TextView
+                    android:layout_width="0dp" android:layout_height="120dp"
+                    android:layout_weight="1" android:text="🐦"
+                    android:textSize="44sp" android:gravity="center"
+                    android:background="#FFF9E6" android:layout_marginEnd="2dp" />
+                <TextView
+                    android:layout_width="0dp" android:layout_height="120dp"
+                    android:layout_weight="1" android:text="🐹"
+                    android:textSize="44sp" android:gravity="center"
+                    android:background="#E8F0FF" />
+            </LinearLayout>
+
+            <!-- Row 3 -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+                <TextView
+                    android:layout_width="0dp" android:layout_height="120dp"
+                    android:layout_weight="1" android:text="🐰"
+                    android:textSize="44sp" android:gravity="center"
+                    android:background="#FCE4EC" android:layout_marginEnd="2dp" />
+                <TextView
+                    android:layout_width="0dp" android:layout_height="120dp"
+                    android:layout_weight="1" android:text="🐠"
+                    android:textSize="44sp" android:gravity="center"
+                    android:background="#E0F7FA" />
+            </LinearLayout>
+
+        </LinearLayout>
+    </ScrollView>
+
+</RelativeLayout>
