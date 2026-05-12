@@ -4,9 +4,16 @@ plugins {
 
 android {
     namespace = "com.example.furloop"
+    buildFeatures {
+        viewBinding = true
+    }
+
     compileSdk {
         version = release(36) {
             minorApiLevel = 1
+        }
+        buildFeatures {
+            viewBinding = true
         }
     }
 
@@ -36,6 +43,7 @@ android {
 }
 
 dependencies {
+
     implementation(libs.androidx.core.ktx)
     implementation(libs.androidx.appcompat)
     implementation(libs.material)
